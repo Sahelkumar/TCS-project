@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+   
+}
+body{
+    overflow-x: hidden;
+}
+.con{
+    background-color:#fff;
+    height:100vh;
+    width: 100vw;
+}
+.nav{
+    height: 70px;
+    border-bottom: 2px solid rgb(239, 237, 237);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    background-image: url(img/myntra_logo.webp);
+    height: 36px;
+    width: 53px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}    
+.links sup{
+    font-size: 10px;
+    color: red;
+}   
+.links a{
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    border-bottom: 2px solid #ffffff;
+    padding: 24px 0;
+}
+.links a:hover{
+     border-bottom: 3px solid #f54e77;
+}
+.search-container {
+    position: relative;
+    width: 500px;
+    
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(239, 237, 237);
+    border: none;
+}
+.search-container .fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.profile{
+   display: flex;
+   min-width: 200px;
+   justify-content: space-evenly;
+}
+.action_icon{
+   font-weight: 100;
+   cursor: pointer;
+}
+.action_name{
+    font-size: 12px;
+}
+.action_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.profile a{
+    margin: 10px;
+
+}
+
+/*** main section CSS ***/
+.main{
+    margin: 40px 0;
+}
+.Main-img{
+    height: 450px;
+    width: 100%;
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 40px;
+
+    /* position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: slide 30s infinite; */
+    
+}
+.category_heading{
+    display: flex;
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+    
+}
+.category_items{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 50px;
+}
+.sale_item{
+  
+  width: 250px;
+  
+}    
+/*** footer **/
+.footer_container{
+     padding: 30px 0px 40px 0px;
+     background: #fdfdfd;
+     display: flex;
+     justify-content: space-evenly;
+    }
+.footer_column{
+    display: flex;
+    flex-direction: column;
+}     
+.footer_column a{
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 5px;
+    color: #696b69;
+    text-transform: lowercase;
+    
+}    
+.footer_column h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #282c3f;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: #94969f;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+.experience h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #282c3f;
+}
+.experience_image{
+    height: 40px;
+    width: 130px;
+}
+.keep
+{
+    margin-top: 20px;
+}
+.keep h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #282c3f;
+}   
+.keep_css{
+    height: 20px;
+    width: 20px;
+    
+}
+.keep_container a{
+    margin: 0 15px 0 0;
+}    
+
+
+/** animation **/
+@keyframes slide {
+    0% { background-image: url('img/banner.jpg'); }
+    25% { background-image: url('img/Banner\ 2.webp'); }
+    50% { background-image: url('img/banner\ 3.webp'); }
+    75% { background-image: url('img/banner\ 4.webp'); }
+    100% { background-image: url('img/banner\ 3.webp'); }
+}
+
+.main-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
